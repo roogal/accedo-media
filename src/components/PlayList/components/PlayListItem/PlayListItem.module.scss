@@ -1,0 +1,43 @@
+@import "../../../../styles/utils";
+@import "../../../../styles/variables";
+
+.container {
+  position: relative;
+  display: flex;
+  margin: 0;
+  background-color: $secondary-bg;
+  border-radius: 34px;
+  padding: 8px 8px 8px 16px;
+  margin: 16px 0;
+  line-height: 36px;
+}
+
+.url {
+  margin: 0;
+  width: 100%;
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+
+.urlActive {
+  font-weight: bold;
+  color: $focused;
+}
+
+.button {
+  color: $primary-text;
+  display: inline-block;
+  background-color: $error-color;
+  padding: 0.5rem 1rem;
+  margin: 0 0 0 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 34px;
+  border-color: $primary;
+
+  &:disabled {
+    border: none;
+    background-color: $disabled;
+    cursor: not-allowed;
+  }
+}

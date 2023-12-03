@@ -6,3 +6,6 @@
 export * from "./AppHeader";
 export * from "./AppFooter";
 export * from "./LoaderSpinner";
+export * from "./Modal";
+export * from "./Player";
+export * from "./PlayList";

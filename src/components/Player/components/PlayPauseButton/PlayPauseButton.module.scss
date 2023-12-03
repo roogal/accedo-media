@@ -1,0 +1,13 @@
+@import "../../../../styles/utils";
+@import "../../../../styles/variables";
+
+.button {
+  border-radius: 86px;
+  width: 86px;
+
+  svg {
+    width: 64px;
+    height: 64px;
+    font-size: 64px;
+  }
+}

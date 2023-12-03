@@ -1,0 +1,82 @@
+@import "../../../../styles/utils";
+@import "../../../../styles/variables";
+
+.container {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.buttons {
+  position: relative;
+  display: inline-block;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  padding: 8px 0;
+
+  button {
+    box-sizing: border-box;
+    position: relative;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    min-width: 48px;
+    min-height: 48px;
+    border-radius: 64px;
+
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    color: $primary-text;
+    width: 64px;
+    margin: 0 16px;
+    background: none;
+
+    svg {
+      padding: 0;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      color: $icon-color;
+      width: 48px;
+      height: 48px;
+      font-size: 48px;
+    }
+
+    &:hover,
+    &.hover {
+      svg {
+        background: $primary;
+        color: $icon-color
+      }
+    }
+
+    &:disabled {
+      border: none;
+      cursor: not-allowed;
+
+      svg {
+        background: $disabled;
+        color: $disabled;
+        border: 2px solid $disabled;
+      }
+    }
+
+    &:focus {
+      border: none;
+
+      svg {
+        border: 2px solid $primary;
+      }
+    }
+  }
+}

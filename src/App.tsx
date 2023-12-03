@@ -4,17 +4,8 @@
  * @version: 1.0
  */
 import React from "react";
-import {
-  Routes,
-  Route,
-  Outlet,
-  Link,
-  createBrowserRouter,
-  RouterProvider,
-  useLoaderData,
-} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
-import logo from "./logo.svg";
 import "./App.module.scss";
 
 const IntroScreen = React.lazy(() =>
@@ -36,27 +27,6 @@ const NoMatchScreen = React.lazy(() =>
     })
   )
 );
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.tsx</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
 
 export default function App() {
   return (
@@ -81,5 +51,3 @@ export default function App() {
     </Routes>
   );
 }
-
-//export default App;

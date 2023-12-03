@@ -1,0 +1,52 @@
+@import "../../styles/utils";
+@import "../../styles/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+  background-color: $primary-bg;
+  border: 2px solid $primary-bg;
+  border-radius: 12px;
+  position:  absolute;
+  width: 400px;
+  height: 200px;
+  top: 50px;
+  left: calc(50% - 125px);
+  z-index: 1001;
+  padding: 24px;
+}
+
+.title {
+  display: flex;
+  flex: 1;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.buttons {
+  display: inline-block;
+  text-align: right;
+}
+
+.buttonConfirm,
+.buttonCancel {
+  color: $primary-text;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 34px;
+  border-color: $primary;
+}
+
+.buttonCancel {
+  background-color: $secondary-bg;
+}
+
+.buttonConfirm {
+  background-color: $error-color;
+}
