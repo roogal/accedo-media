@@ -15,7 +15,7 @@ yarn install
 ```
 Run project
 ```
-yarn dev
+yarn start
 ```
 Aplication will be avialble under `http://localhost:3000`
 
